@@ -29,12 +29,23 @@ def main(page: ft.Page):
 
     def adicionar(e):
         if tarefa_input.value.strip():
-            # Criar a checkbox para a tarefa
-            tarefa = ft.Checkbox(label=tarefa_input.value)
+           
+            tarefa_checkbox = ft.Checkbox(label=tarefa_input.value)
+
             
-            # Adicionar a checkbox à lista
-            lista.controls.append(tarefa)
-            
+            def remover(e):
+                lista.controls.remove(linha)
+                page.update()
+
+           
+            linha = ft.Row(
+                controls=[
+                    tarefa_checkbox,
+                    ft.IconButton(icon=ft.icons.DELETE, on_click=remover, tooltip="Remover tarefa")
+                ]
+            )
+
+            lista.controls.append(linha)
             tarefa_input.value = ""
             page.update()
 
