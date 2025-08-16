@@ -39,16 +39,12 @@ venv\Scripts\activate
 source venv/bin/activate
 Install required packages:
 
-bash
-Copiar
-Editar
+
 pip install flet
 How to Run 🚀
 Run the app with:
 
-bash
-Copiar
-Editar
+
 python app.py
 The app window will open, and you can start adding tasks.
 
