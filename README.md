@@ -44,15 +44,15 @@ Run the app with:
 python app.py
 The app window will open, and you can start adding tasks.
 
-Preview 🎬
+##Preview 🎬
 
 You can include a screenshot or GIF of your app here:
 
-About Me 💡
+##About Me 💡
 
 I'm a beginner in programming. This is my 3rd project, and I'm excited to keep learning and improving!
 I hope this project helps others who are starting with Python and Flet.
 
-License 📄
+##License 📄
 
 This project is open-source and free to use.
